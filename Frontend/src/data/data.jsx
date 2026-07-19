@@ -19,6 +19,8 @@ import {
   Link
 } from 'lucide-react';
 
+import {assets} from "../assets/assets.js"
+
 // ==========================================
 // Portfolio Data - Jeyarane S
 // All portfolio content is managed here.
@@ -34,6 +36,7 @@ export const personalInfo = {
   phone: "+91 8012181974",
   address: "No. 49, Kaliyamman Kovil Street, Mettutheru, Bethaniyapuram, Madurai – 625016",
   city: "Madurai",
+  profileImage: assets.jeyarane,
   linkedin: "https://linkedin.com/in/jeyarane-s-766105375",
   linkedinDisplay: "linkedin.com/in/jeyarane-s-766105375",
   objective:

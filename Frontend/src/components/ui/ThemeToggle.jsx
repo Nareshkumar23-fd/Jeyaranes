@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
-import { Sun, Moon, Diamond } from 'lucide-react';
+import { Sun, Moon, Diamond, Sparkles } from 'lucide-react';
+import './ThemeToggle.css';
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
@@ -12,7 +13,7 @@ const ThemeToggle = () => {
   ];
 
   return (
-    <div className="theme-toggle" role="radiogroup" aria-label="Theme selector">
+    <div className="theme-toggle-wrapper" role="radiogroup" aria-label="Theme selector">
       {themeOptions.map((opt) => (
         <button
           key={opt.key}
@@ -24,6 +25,7 @@ const ThemeToggle = () => {
           title={opt.label}
         >
           {opt.icon}
+          <span className="theme-tooltip">{opt.label}</span>
         </button>
       ))}
     </div>
