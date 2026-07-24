@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { navLinks, personalInfo } from '../../data/data';
 import ThemeToggle from '../ui/ThemeToggle';
-import { Download, Menu, X } from 'lucide-react';
+import { Download, X } from 'lucide-react';
 import { assets } from '../../assets/assets';
+import { BiMenuAltRight } from "react-icons/bi";
+
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -115,7 +117,8 @@ const NavBar = () => {
               aria-label="Toggle menu"
               aria-expanded={isMobileOpen}
             >
-              {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileOpen ? <X size={24} /> : <BiMenuAltRight size={24} />
+}
             </button>
           </div>
         </div>

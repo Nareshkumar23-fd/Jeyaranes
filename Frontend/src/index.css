@@ -301,6 +301,7 @@ textarea {
   --timeline-line: #1a8cff;
   --timeline-dot: #4da6ff;
 }
+
 /* ThemeToggle.css - Modern Theme Selector */
 
 .theme-toggle-wrapper {
@@ -1765,18 +1766,36 @@ h6 {
   animation: slideIn 0.4s ease forwards;
 }
 
-.mobile-nav-link:nth-child(1) { animation-delay: 0.05s; }
-.mobile-nav-link:nth-child(2) { animation-delay: 0.1s; }
-.mobile-nav-link:nth-child(3) { animation-delay: 0.15s; }
-.mobile-nav-link:nth-child(4) { animation-delay: 0.2s; }
-.mobile-nav-link:nth-child(5) { animation-delay: 0.25s; }
-.mobile-nav-link:nth-child(6) { animation-delay: 0.3s; }
+.mobile-nav-link:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.mobile-nav-link:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.mobile-nav-link:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.mobile-nav-link:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.mobile-nav-link:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.mobile-nav-link:nth-child(6) {
+  animation-delay: 0.3s;
+}
 
 @keyframes slideIn {
   from {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -2278,6 +2297,9 @@ h6 {
   }
 
   .modern-image-wrapper {
+         padding-top: 37px;
+        margin-top: 54px;
+
     width: 300px;
     height: 380px;
   }
@@ -2357,6 +2379,8 @@ h6 {
   }
 
   .modern-image-wrapper {
+   padding-top: 37px;
+    margin-top: 54px;
     width: 250px;
     height: 320px;
   }
