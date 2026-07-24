@@ -4,14 +4,16 @@
    Themes: Light, Dark, Blue
    ========================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 /* ==========================================
    CSS RESET & BASE
    ========================================== */
+
+
+
+
 *,
-*::before,
-*::after {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -968,7 +970,7 @@ h6 {
   right: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   height: 80px;
   display: flex;
   align-items: center;
