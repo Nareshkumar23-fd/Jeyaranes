@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
-const THEMES = ['light', 'dark', 'blue'];
+const THEMES = ['light', 'dark'];
 const STORAGE_KEY = 'portfolio-theme';
 
 export const ThemeProvider = ({ children }) => {

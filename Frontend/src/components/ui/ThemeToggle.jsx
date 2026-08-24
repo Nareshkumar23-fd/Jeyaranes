@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
-import { Sun, Moon, Diamond, Sparkles } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
@@ -8,7 +8,6 @@ const ThemeToggle = () => {
   const themeOptions = [
     { key: 'light', icon: <Sun size={18} />, label: 'Light' },
     { key: 'dark', icon: <Moon size={18} />, label: 'Dark' },
-    { key: 'blue', icon: <Diamond size={18} />, label: 'Blue' },
   ];
 
   return (

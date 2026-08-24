@@ -33,4 +33,14 @@
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('portfolio-theme');
+      var theme = ['light', 'dark', 'blue'].includes(saved) ? saved : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) { }
+  })();
+</script>
+
 </html>
