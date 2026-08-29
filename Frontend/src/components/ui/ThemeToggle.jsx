@@ -20,7 +20,7 @@ const ThemeToggle = () => {
           aria-label={`Switch to ${opt.label} theme`}
           aria-checked={theme === opt.key}
           role="radio"
-          title={opt.label}
+          // title={opt.label}
         >
           {opt.icon}
           {/* <span className="theme-tooltip">{opt.label}</span> */}
