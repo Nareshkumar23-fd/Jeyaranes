@@ -23,7 +23,7 @@ const ThemeToggle = () => {
           title={opt.label}
         >
           {opt.icon}
-          <span className="theme-tooltip">{opt.label}</span>
+          {/* <span className="theme-tooltip">{opt.label}</span> */}
         </button>
       ))}
     </div>
